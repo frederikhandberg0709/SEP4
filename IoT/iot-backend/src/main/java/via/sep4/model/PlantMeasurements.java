@@ -2,6 +2,8 @@ package via.sep4.model;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,6 +18,7 @@ public class PlantMeasurements {
 
     @ManyToOne
     @JoinColumn(name = "experiment_id", nullable = false)
+    @JsonIgnore
     private PlantExperiment experiment;
 
     private double luftTemperatur;

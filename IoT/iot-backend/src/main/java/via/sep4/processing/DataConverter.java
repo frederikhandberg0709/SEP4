@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DataConverter {
     private static final int MAX_ROWS = 1000;
     private static final int MAX_COLS = 100;
@@ -17,6 +20,10 @@ public class DataConverter {
     private boolean hasHeaders;
     private int rows;
     private int cols;
+
+    public DataConverter() {
+        this(true);
+    }
 
     public DataConverter(boolean hasHeaders) {
         this.hasHeaders = hasHeaders;
