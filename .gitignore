@@ -1,2 +1,19 @@
-IoT/iot-backend/target/classes/application.properties
-IoT/iot-backend/src/main/resources/application.properties
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Log files
+*.log
+
+# Build directories
+build/
+dist/
+
+# Java build
+target/
+
+# Credentials
+.env
